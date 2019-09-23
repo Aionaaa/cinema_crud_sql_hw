@@ -56,3 +56,9 @@ SELECT name FROM people;
 UPDATE people SET name = 'Krusty The Klown' WHERE name = 'Crusty the Clown';
 SELECT name FROM people WHERE name = 'Homer Simpson';
 DELETE from movies WHERE title = 'Batman Begins';
+INSERT INTO people
+(name) VALUES ('Bart Simpson');
+DELETE FROM people WHERE name = 'Eric Cartman';
+INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '00:00');
+SELECT title,show_time FROM movies;
+UPDATE movies SET show_time = '20:45' WHERE title = "Iron Man 3";
